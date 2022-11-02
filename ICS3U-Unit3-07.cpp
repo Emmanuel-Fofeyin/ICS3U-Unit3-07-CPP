@@ -22,14 +22,14 @@ int main() {
         ageInt = std::stoi(ageString);
 
         if (ageInt > 25 && ageInt < 40) {
-            std::cout << "You are an acceptable age!" << std::endl;
+            std::cout << "You are an acceptable age." << std::endl;
         } else if (ageInt < 0) {
-            std::cout << "That is not a valid age!" << std::endl;
+            std::cout << "That is not a valid age." << std::endl;
         } else {
-            std::cout << "You are not an acceptable age" << std::endl;
+            std::cout << "You are not an acceptable age." << std::endl;
         }
     } catch (std::invalid_argument) {
-        std::cout << "" << ageString << ", is not an integer" << std::endl;
+        std::cout << "" << ageString << ", is not valid input." << std::endl;
     }
 
     std::cout << ("\nDone.") << std::endl;
